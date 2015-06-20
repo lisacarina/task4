@@ -1,0 +1,270 @@
+
+$main_font:         'Varela', sans-serif;
+$highlight_font:    'Raleway', sans-serif;
+
+$blue:              #00005e;
+$green:             #009d00;
+$red:               #8e0000;
+
+
+
+body {
+    font-family: $main_font;
+    line-height: 2;
+
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f0f9ff 98%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(98%,#f0f9ff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f0f9ff 98%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f0f9ff 98%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f0f9ff 98%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f0f9ff 98%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-9 */
+
+}
+
+h1, h2, h3 {
+    font-family: $highlight_font;
+}
+
+h1 {
+  margin: 30px 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.news_container {
+  margin: 15px 0;
+
+  h2 {
+    float: left;
+    padding: 15px 0 0 15px;
+  }
+
+  .glyphicon {
+    float: left;
+    font-size: 50px;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: #9999ff;
+  }
+
+  .news_header {
+    display: block;
+    height: 50px;
+  }
+
+  .news {
+    box-sizing: border-box;
+    padding: 40px 20px 20px;
+    text-align: center;
+
+    a {
+      box-sizing: border-box;
+      color: #000;
+      display: table;
+      height: 300px;
+      padding: 10%;
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      &:hover {
+        cursor:pointer;
+        background-color: #fff;
+      }
+    }
+
+    h3 {
+      margin-top:0;
+    }
+
+    img {
+      transition: all ease-in 200ms;
+      width: 95%;
+    }
+  }
+
+  &.food {
+    background-color: rgba($blue, 0.05) ;
+
+    .glyphicon {
+      color: $blue;
+    }
+  }
+
+  &.nature {
+    background-color: rgba($green, 0.05) ;
+
+    .glyphicon {
+      color: $green;
+    }
+
+  }
+
+  &.health {
+    background-color: rgba($red, 0.05) ;
+
+    .glyphicon {
+      color: $red;
+    }
+
+  }
+
+  &.detail {
+    margin-bottom: 0;
+
+
+    .news {
+      text-align: left;
+    }
+  }
+}
+
+.back {
+  display: block;
+  margin: 30px 35px;
+}
+
+.byline {
+  background-color: $blue ;
+  box-sizing: border-box;
+  color: #fff;
+  display: table;
+  line-height: 1;
+  margin-bottom: 20px;
+  padding: 10px 35px;
+  width: 100%;
+
+  .glyphicon {
+    color: #fff;
+    float:left;
+    margin-right: 10px;
+  }
+
+}
+
+footer {
+  background: $blue;
+  height: 45px;
+  padding: 10px 35px;
+  
+  li {
+    list-style: none;
+    float: right;
+    text-align: center;
+    width: 130px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #0000ff;
+      }
+    }
+
+  }
+}
+
+aside{
+  background: #ddd;
+  display: block;
+  margin-top: 15px;
+  padding: 0 20px 20px;
+
+}
+
+.css_sprite {
+
+  span {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 0;
+
+  }
+
+  .twitter {
+    top: 200px;
+    background: url('../images/css_sprite.png') 0 0;
+  }
+
+  .fb {
+    top: 245px;
+    background: url('../images/css_sprite.png') -40px 0;
+  }
+  .yt {
+    top: 290px;
+    background: url('../images/css_sprite.png') -80px 0;
+  }
+  .gplus {
+    top: 335px;
+    background: url('../images/css_sprite.png') 40px 0;
+  }
+
+}
+
+/* ------------ MEDIA QUERIES ------------- */
+
+@media screen and (max-width: 1000px) {
+  aside {
+    margin: 15px;
+    padding: 10px 0 20px;
+  }
+
+  .news_container {
+     .news {
+       padding: 10px 20px;
+     }
+     .news_header {
+       height: 80px;
+     }
+   }
+
+  .css_sprite {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  footer {
+    li {
+      float: left;
+      width: 30%;
+    }
+  }
+  .news_container .news_header {
+    display: table;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  aside {
+    margin: 15px 0 0 0;
+  }
+  .col-md-12, .col-md-4, .col-md-9, .col-md-9 {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  footer {
+    ul {
+      padding-top: 10px;
+    }
+  }
+
+  .byline {
+    padding: 15px;
+    line-height: 2;
+  }
+}

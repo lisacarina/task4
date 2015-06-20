@@ -1,0 +1,167 @@
+body {
+  font-family: 'Varela', sans-serif;
+  line-height: 2;
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(98%, #f0f9ff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f9ff 98%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%, #f0f9ff 98%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f9ff',GradientType=0 );
+  /* IE6-9 */ }
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif; }
+
+h1 {
+  margin: 30px 0; }
+
+a:hover {
+  text-decoration: none; }
+
+.news_container {
+  margin: 15px 0; }
+  .news_container h2 {
+    float: left;
+    padding: 15px 0 0 15px; }
+  .news_container .glyphicon {
+    float: left;
+    font-size: 50px;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: #9999ff; }
+  .news_container .news_header {
+    display: block;
+    height: 50px; }
+  .news_container .news {
+    box-sizing: border-box;
+    padding: 40px 20px 20px;
+    text-align: center; }
+    .news_container .news a {
+      box-sizing: border-box;
+      color: #000;
+      display: table;
+      height: 300px;
+      padding: 10%; }
+      .news_container .news a img {
+        margin-bottom: 20px; }
+      .news_container .news a:hover {
+        cursor: pointer;
+        background-color: #fff; }
+    .news_container .news h3 {
+      margin-top: 0; }
+    .news_container .news img {
+      -webkit-transition: all ease-in 200ms;
+              transition: all ease-in 200ms;
+      width: 95%; }
+  .news_container.food {
+    background-color: rgba(0, 0, 94, 0.05); }
+    .news_container.food .glyphicon {
+      color: #00005e; }
+  .news_container.nature {
+    background-color: rgba(0, 157, 0, 0.05); }
+    .news_container.nature .glyphicon {
+      color: #009d00; }
+  .news_container.health {
+    background-color: rgba(142, 0, 0, 0.05); }
+    .news_container.health .glyphicon {
+      color: #8e0000; }
+  .news_container.detail {
+    margin-bottom: 0; }
+    .news_container.detail .news {
+      text-align: left; }
+
+.back {
+  display: block;
+  margin: 30px 35px; }
+
+.byline {
+  background-color: #00005e;
+  box-sizing: border-box;
+  color: #fff;
+  display: table;
+  line-height: 1;
+  margin-bottom: 20px;
+  padding: 10px 35px;
+  width: 100%; }
+  .byline .glyphicon {
+    color: #fff;
+    float: left;
+    margin-right: 10px; }
+
+footer {
+  background: #00005e;
+  height: 45px;
+  padding: 10px 35px; }
+  footer li {
+    list-style: none;
+    float: right;
+    text-align: center;
+    width: 130px; }
+    footer li a {
+      color: #fff; }
+      footer li a:hover {
+        color: #0000ff; }
+
+aside {
+  background: #ddd;
+  display: block;
+  margin-top: 15px;
+  padding: 0 20px 20px; }
+
+.css_sprite span {
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  right: 0; }
+.css_sprite .twitter {
+  top: 200px;
+  background: url('../images/css_sprite.png') 0 0; }
+.css_sprite .fb {
+  top: 245px;
+  background: url('../images/css_sprite.png') -40px 0; }
+.css_sprite .yt {
+  top: 290px;
+  background: url('../images/css_sprite.png') -80px 0; }
+.css_sprite .gplus {
+  top: 335px;
+  background: url('../images/css_sprite.png') 40px 0; }
+
+/* ------------ MEDIA QUERIES ------------- */
+@media screen and (max-width: 1000px) {
+  aside {
+    margin: 15px;
+    padding: 10px 0 20px; }
+  .news_container .news {
+    padding: 10px 20px; }
+  .news_container .news_header {
+    height: 80px; }
+  .css_sprite {
+    display: none; } }
+
+@media screen and (max-width: 760px) {
+  footer li {
+    float: left;
+    width: 30%; }
+  .news_container .news_header {
+    display: table;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 480px) {
+  aside {
+    margin: 15px 0 0 0; }
+  .col-md-12, .col-md-4, .col-md-9, .col-md-9 {
+    margin: 15px 0 0 0;
+    padding: 0; }
+  footer ul {
+    padding-top: 10px; }
+  .byline {
+    padding: 15px;
+    line-height: 2; } }
